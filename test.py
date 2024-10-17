@@ -14,6 +14,9 @@ client = OpenAI(
 with open('change_types.json', 'r') as f:
     change_types = json.load(f)
 
+with open('data_points.json', 'r') as f:
+    data_points = json.load(f)
+    
 def get_change_type_and_degree(paragraph1, paragraph2):
     # Dynamically create the prompt based on the descriptions in the JSON file
     prompt = f"""
@@ -47,11 +50,19 @@ def get_change_type_and_degree(paragraph1, paragraph2):
     temperature=0,
     )
 
-    return response.choices[0].message.content
+    try:
+        return json.loads(response.choices[0].message.content.strip())
+    except:
+        return None
 
-# Example usage:
-paragraph1 = "For optimal results, you should take the green supplement daily to improve your health."
-paragraph2 = "It may be beneficial to take the green supplement occasionally, but it’s not essential for improving your health."
 
-result = get_change_type_and_degree(paragraph1, paragraph2)
-print(result)
+results = []
+for data_point in data_points:
+    paragraph1 = data_point["paragraph1"]
+    paragraph2 = data_point["paragraph2"]
+    result = get_change_type_and_degree(paragraph1, paragraph2)
+    if result:  
+        results.append(result)
+
+for result in results:
+    print(json.dumps(result, indent=2))  
