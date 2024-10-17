@@ -1,10 +1,14 @@
 import os
 from openai import OpenAI
 import json
+from dotenv import load_dotenv
+
+load_dotenv()
+
+your_api_key = os.getenv('OPENAI_API_KEY')
 
 client = OpenAI(
-    # This is the default and can be omitted
-    api_key="your_api_key"
+    api_key=your_api_key
 )
 
 with open('change_types.json', 'r') as f:
