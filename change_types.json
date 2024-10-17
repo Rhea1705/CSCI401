@@ -34,6 +34,42 @@
         "5": "Completely opposite evaluation",
         "null": "No comparable evaluation found"
       }
+    },
+    "Fact_Changing": {
+      "description": "The change shows a difference in originally presented evidence or facts. This is usually a change from another source author or new evidence was found.",
+      "scale": {
+        "0": "Exactly the same fact", 
+        "1": "Minor differences in fact",
+        "2": "Reference material for the fact is different, but the fact remains essentially the same",
+        "3": "Reference material for the fact is different, and there is a minor difference",
+        "4": "Substantial change in fact",
+        "5": "Completely opposite fact",
+        "null": "No comparable fact found"
+      }
+    },
+    "Phrasing": {
+      "description": "The change reflects a difference in word choice or sentence structure.",
+      "scale": {
+        "0": "Exactly the same phrasing",
+        "1": "Minor differences in phrasing",
+        "2": "Differences in sentence structure",
+        "3": "Differences in word choice",
+        "4": "Differences in word choice and sentence structure",
+        "5": "Completely opposite phrasing",
+        "null": "No comparable phrasing found"
+      }
+    },
+    "Addition": {
+      "description": "The change reflects that something new was added to the original text.",
+      "scale" {
+        "0": "Nothing new was added",
+        "1": "A word was added but it does not change the meaning of the sentence",
+        "2": "A sentence was added but it does not change the meaning of the text",
+        "3": "The addition creates another change in either phrasing or evidence",
+        "4": "The addition creates another change in evaluation",
+        "5": "The addition creates another change in either claim or recommended actions", 
+        "null": "The texts are not comparable to determine if a new addition exists"
+      }
     }
   }
   
