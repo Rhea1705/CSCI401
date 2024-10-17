@@ -1,0 +1,36 @@
+ABSTRACT
+We introduce Adam, an algorithm for first-order gradient-based optimization of
+stochastic objective functions. The method is straightforward to implement and is
+based an adaptive estimates of lower-order moments of the gradients. The method
+is computationally efficient, has little memory requirements and is well suited for
+problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse
+gradients. The method exhibits invariance to diagonal rescaling of the gradients
+by adapting to the geometry of the objective function. The hyper-parameters have
+intuitive interpretations and typically require little tuning. Some connections to
+related algorithms, on which Adam was inspired, are discussed. We also analyze
+the theoretical convergence properties of the algorithm and provide a regret bound
+on the convergence rate that is comparable to the best known results under the
+online convex optimization framework. We demonstrate that Adam works well in
+practice when experimentally compared to other stochastic optimization methods.
+1 INTRODUCTION
+Stochastic gradient-based optimization is of core practical importance in many fields of science and
+engineering. Many problems in these fields can be cast as the optimization of some scalar parameterized objective function requiring maximization or minimization with respect to its parameters.
+If the function is differentiable w.r.t. its parameters, a relatively efficient method of optimization is
+gradient ascent, since the computation of first-order partial derivatives w.r.t. all the parameters is of
+the same computational complexity as just evaluating the function. Often, objective functions are
+stochastic. For example, many objective function are composed of a sum of subfunctions evaluated
+at different subsamples of data; in this case optimization can be made more efficient by taking gradient steps w.r.t. individual subfunctions, i.e. stochastic gradient descent (SGD) or ascent. SGD
+proved itself as an efficient and effective optimization method that was central in many machine
+learning success stories, such as recent advances in deep learning Deng et al. (2013); Krizhevsky
+et al.; Hinton & Salakhutdinov (2006); Hinton et al. (2012a); Graves et al. (2013). Objectives may
+also have other sources of noise than data subsampling, such as dropout Hinton et al. (2012b) regularization. For all such noisy objectives, efficient stochastic optimization techniques are required.
+The focus of this paper is on the optimization of stochastic objectives with high-dimensional parameters spaces. In these cases, higher-order optimization methods are ill-suited, and discussion in this
+paper will be restricted to first-order methods.
+We propose Adam, a method for efficient stochastic optimization that only requires first-order gradients and requires little memory. The method computes individual adaptive learning rates for different
+parameters from estimates of first and second moments of the gradients; the name Adam is derived
+from adaptive moment estimation. Our method is designed to combine the advantages of two recently popular methods: AdaGrad Duchi et al. (2011), which works well with sparse gradients, and
+RMSProp Tieleman & Hinton (2012), which works well in on-line and non-stationary settings; important connections to these and other stochastic optimization methods are clarified in section 5.
+Some of Adam’s advantages are that the magnitudes of parameter updates are invariant to rescaling
+of the gradient, its stepsizes are approximately bounded by the stepsize hyperparameter, it does not
+require a stationary objective, it works with sparse gradients, and it performs a form of automatic
+annealing.
