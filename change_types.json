@@ -1,0 +1,39 @@
+{
+    "Recommended_Action": {
+      "description": "The change between two paragraphs represents a modification in the recommended action or prescribed course of action.",
+      "scale": {
+        "0": "Exactly the same",
+        "1": "Minor differences, phrasing",
+        "2": "Differences in how to do it, but not action goal",
+        "3": "Major how",
+        "4": "Substantially different action steps",
+        "5": "Completely opposite guidance",
+        "null": "No comparable actions of this type in the new paragraph"
+      }
+    },
+    "Claim": {
+      "description": "A difference in claims between two texts appears as different main points being made. It could take the form of thesis statements, topic sentences, or conclusions.",
+      "scale": {
+        "0": "Exactly the same claim",
+        "1": "Minor differences in wording or phrasing",
+        "2": "Differences in tone or intensity of the claim",
+        "3": "Significant change in the claim or evidence",
+        "4": "Substantially different or opposing claim",
+        "5": "Completely opposite claim",
+        "null": "No comparable claims found"
+      }
+    },
+    "Evaluation": {
+      "description": "The change reflects a modification in the evaluation or assessment of a situation, concept, or outcome.",
+      "scale": {
+        "0": "Exactly the same evaluation",
+        "1": "Minor differences in phrasing",
+        "2": "Differences in tone or degree of evaluation",
+        "3": "Significant change in assessment criteria",
+        "4": "Substantial change in evaluation or judgment",
+        "5": "Completely opposite evaluation",
+        "null": "No comparable evaluation found"
+      }
+    }
+  }
+  
