@@ -93,6 +93,8 @@ for paragraph in paragraphs:
     if result:  
         results.append(result)
 
-# Print
-for result in results:
-    print(json.dumps(result, indent=2))
+output_file = 'results.json'
+with open(output_file, 'w') as json_file:
+    json.dump(results, json_file, indent=2)
+
+print(f"Results have been written to {output_file}")
