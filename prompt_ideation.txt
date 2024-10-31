@@ -1,0 +1,33 @@
+Hello! I will be giving you two different passages. 
+Your objective is to list the changes between the two passages along with the level (or severity) of the change. 
+I will give you a description of each type of change as well as examples of what the change looks like.
+Then, I will ask you to give a rating of the change on a scale from 1-5 that I will provide.
+Please do not list any changes until I say so. We will proceed step by step with each type of change.
+
+Passage 1:
+
+[passage]
+
+Passage 2:
+
+[passage]
+
+[BREAK]
+
+The first change type is Recommended Action
+A description of this change would be: The change between two paragraphs represents a modification in the recommended action or prescribed course of action.
+Here are some examples:
+Sample passage 1: For optimal results, you should take the green supplement daily to improve your health.
+Sample passage 2: It may be beneficial to take the green supplement occasionally, but it’s not essential for improving your health.
+Differences: The sample passage two recommends taking the supplement occassionally, but the first passage recommends taking it daily.
+
+Please provide a single digit answer from 1-5 based on the scale below that corresponds to the level of change between the inital two passages along with a reasoning of why you selected this number.
+Scale:
+0: Exactly the same
+1: Minor differences, phrasing
+2: Differences in how to do it, but not action goal
+3: Major how
+4: Substantially different action steps
+5: Completely opposite guidance
+null: No comparable actions of this type in the new paragraph
+[BREAK]

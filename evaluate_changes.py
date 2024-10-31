@@ -40,11 +40,19 @@ def get_input_text_data(input_text_name):
 
     return original_text, updated_text
 
-def get_prompt(prompt_filepath):
+def get_prompt(prompt_filepath, passage0, passage1):
     with open(prompt_filepath, 'r') as file:
         prompt_full = file.read()
 
-    prompt = prompt_full.split("[BREAK]")
+    prompt = prompt_full.split("\n[BREAK]\n")
+
+    with_passages = prompt[0].split("\n[passage]\n")
+    with_passages.insert(1, passage0)
+    with_passages.insert(3, passage1)
+
+    with_passages_str = ''.join(with_passages)
+
+    prompt[1] = with_passages_str
 
     return prompt
 
@@ -89,24 +97,30 @@ def get_prompt(prompt_filepath):
 def create_chain(prompt):
     llm = OpenAI(api_key=your_api_key)
 
-    # Build chain links using LLMChain
     chain_links = []
 
     for prompt_segment in prompt:
-        # Create a LLMChain for each prompt segment
         prompt_template = PromptTemplate(template=prompt_segment, input_variables=["text"])
         chain_links.append(LLMChain(llm=llm, prompt=prompt_template))
 
-    # Now we combine these LLMChains sequentially
     return chain_links
 
+def parse_respose_output(output):
+    full_response_list = []
 
-input_text_name = "adam"
-prompt_filepath = "test_prompt.txt"
+    full_response_list = [entry['text'] for entry in output.values()]
+
+    return full_response_list
+
+
+input_text_name = "dcn"
+prompt_filepath = "prompt_ideation.txt"
 
 original_text, updated_text = get_input_text_data(input_text_name)
 
-prompt = get_prompt(prompt_filepath)
+prompt = get_prompt(prompt_filepath, original_text, updated_text)
+
+# print("prompt", prompt)
 
 chain_links = create_chain(prompt)
 
@@ -116,7 +130,16 @@ input_text = "Hello!"
 for i, chain in enumerate(chain_links):
     results[i] = chain.invoke({"text": input_text})
 
+print("----------------------------------")
+
 print(results)
+
+print("----------------------------------")
+
+response = parse_respose_output(results)
+
+for output in response:
+    print(output)
 
 
 
