@@ -1,0 +1,19 @@
+In this paper, we define a spectrum of gene interactions that permit the analysis of effects
+as a sum of contributions from all possible sets of gene loci. The exponential expansion of
+combinations leads to the scale problem. We show that compressive sensing offers a path toward
+addressing the scale problem of describing the effects of genes on quantitative traits.
+There is a class of traits whose smoothness allows a precise description based upon a much
+smaller number of observations, rather than the 2n
+that would be theoretically be required. This
+occurs in traits composed from more-or-less independent modules. Such modular structures
+greatly generalize previous attempts to reconstruct a trait from independent allele effects. For
+this class of traits (and possibly others), the Fourier transform provides a natural “compression”
+of the data in the gene network. The uncertainty principle for the discrete group Z
+n
+2
+ensures that,
+since the gene network space is sufficiently concentrated, the effects in trait space are pervasive,
+so that a limited number of randomly chosen organisms will provide useful data. In effect, the
+“needles in the haystack” of the gene network cannot hide because they will poke all of the
+genomes. Much work still remains to find traits with the requisite smoothness. This may involve
+recasting biological traits by a monotone transformation.

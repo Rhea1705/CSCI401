@@ -1,0 +1,9 @@
+This paper considers a large two-sided matching market, where a matching between the
+two sides is stable. In such a situation, it is a non-trivial matter to establish limit theorems
+for statistics such as empirical matching probabilities as the number of market participants
+grows. Using the re-equilibration arguments from economic theory, we derive a concentration
+inequality for various statistics that involve matching outcomes in this environment.
+In order to develop inference that does not require random sampling from a large matching, one needs to take into account the dependence structure of the observations carefully.
+However, this is challenging in large matching markets. It is left to future research to establish
+limit distribution theory for the large matching setting, where a complex dependence structure
+arises naturally due to the interdependence among agents in the underlying market.

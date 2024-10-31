@@ -1,0 +1,13 @@
+The results show that TSR should be applied with caution when modeling renewable energy systems. Besides
+intermittency of renewables, dependency on seasonal storage adversely affects the accuracy of TSR. As suggested by
+former research, we found the accuracy of TSR to increase with the length of the reduced time-series.
+Implementation of reduced time-series as grouped periods did not consistently achieve small shares of lost load.
+Furthermore, no generally advantageous method for creating reduced time-series nor any fundamental bias on installed
+capacities was identified. Compared to chronological sequences, grouped periods required more time so solve for the
+same number of time-steps, presumably due to variables and constraints added to implement seasonal storage.
+For implementation as chronological sequences, results highly depend on how reduced time-series are adjusted to
+achieve consistency with the full time-series. If the reduced time-series is not re-scaled, results show a bias towards
+short-term storage and considerable loss of load. If the reduced time-series is re-scaled on the other hand, results are
+instead biased towards long-term storage overestimating system costs but achieving small shares of lost load. These
+results are likely to differ for regions with less pronounced seasonal and greater short-term fluctuations. Regarding the
+derivation of reduced time-series, the Poncelet method performed favorable with chronological sequences.
