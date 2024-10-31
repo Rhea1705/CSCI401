@@ -1,0 +1,12 @@
+This paper considers a large two-sided matching market, where a matching between the two sides is realized through a centralized algorithm such as a DA mechanism. In such a situation, it is a nontrivial matter to establish limit theorems for
+statistics including matching frequencies as the number of the participants grows.
+Using the re-equilibration arguments from economic theory and a concentration inequality, we derive a concentration inequality for matching frequencies in this
+environment.
+We believe that our result can potentially be useful for developing inference on
+large matching markets under a wide range of sampling processes. To develop
+inference robust to sampling processes (such as random sampling), one needs to
+take into account the dependence structure of the observations explicitly. As mentioned before, this is challenging in large matching markets. Our work addresses
+this challenge and reveals the role of partial homogeneity of preferences in the
+concentration-of-measure phenomenon for matching frequencies. It is left to future
+research to establish limit distribution theory for the large matching setting, where
+a complex dependence structure arises naturally due to the strategic interdependence in the underlying market.

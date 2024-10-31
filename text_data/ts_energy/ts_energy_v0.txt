@@ -1,0 +1,12 @@
+The results show that TSR should be applied with great caution when modelling renewable energy systems. Besides
+capturing the intermittency of renewables, the seasonal storage that renewable systems depend on is difficult to model
+with TSR. As suggested by former research, we find the accuracy of TSR to increase with the length of the reduced timeseries. Of all reduction methods examined, Poncelet consistently performed best, but its advantage lacks a fundamental
+explanation and could be a coincidental result limited to the considered example.
+The results do not advise implementation of reduced time-series as time-slices, also referred to as representative
+days, because in the test case these exhibited poor estimations of system costs and considerable amounts of lost load when capacities computed with TSR were tested with the full time-series. When using continuous time-steps for
+implementation, results are highly dependent on how the reduced time-series is scaled to achieve consistency with the
+full time-series. This can be done in two ways, either scale up demand itself, which understates the need for short-term
+storage, or scale up all demand related variables and understate the need for seasonal storage. The latter again gives
+poor estimations of system costs and large amounts of lost load, but provides favorable results when only scaling up
+demand. In particular, loss of load drops significantly. What in this paper is referred to as "scaling-up demand" is
+methodologically equivalent to re-sampling by aggregating adjacent hours of the full time-series.

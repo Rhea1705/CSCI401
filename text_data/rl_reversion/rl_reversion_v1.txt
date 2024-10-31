@@ -1,0 +1,6 @@
+This article demonstrates how to apply DRL to quantitative nancial problems
+using the latest technology developed by the pioneers in the eld, and how to use domain knowledge
+to encourage the underlying training algorithm for nding better local optima. I provide a proof of
+concept in a controlled numerical simulation which permits an approximate arbitrage, and I verify
+that the DRL agent nds and exploits this arbitrage in a highly ecient way, while producing Sharpe
+ratios that surpass prior state-of-the-arts.

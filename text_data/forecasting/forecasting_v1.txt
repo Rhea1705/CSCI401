@@ -1,0 +1,9 @@
+In this paper, we focused our attention on creating sub-seasonal series using adjacent
+periods from the original seasonal series. An alternative would be to consider even more
+sub-seasonal series that are not necessarily limited to ones with adjacent periods, thus
+creating a larger pool of series and their accompanying forecasts. Averaging across such
+series could help us further reduce the variance of the forecasts even, possibly with a
+positive effect on the forecasting performance. Moreover, in this work, we set equal
+weights for combining the forecasts from the various sub-seasonal series. A potential
+avenue for future research would be investigating the performance of optimal (unequal)
+combination weights.

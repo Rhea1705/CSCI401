@@ -1,0 +1,9 @@
+A limitation of our approach is that it is designed for accommodating only seasonal
+data. Moreover, our approach just focuses on simple seasonal patterns. While for the
+time series that exhibit complex multiple seasonal patterns (e.g., multiple seasonal periods
+can be observed in the electric load data shown in Figure 8), how to effectively use such
+complex multiple sub-seasonal patterns to improve forecasting remains to be studied
+in the future (De Livera et al., 2011). On the other hand, in this work, we simply
+set equal weights for multiple forecasts and potential research such as calculating their
+optimal unequal combination weights could be explored in the future to further improve
+forecasting performance.

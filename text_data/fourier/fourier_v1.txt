@@ -1,0 +1,16 @@
+In this paper, we define a spectrum of gene interactions that permit the analysis of quantitative
+traits as a sum of contributions from all possible sets of gene loci. The exponential expansion
+of combinations leads to the scale problem. We explore heuristic arguments that many traits
+may permit the application of compressive sensing to describe traits in terms of a low-level
+concentrated set of gene network interactions.
+The uncertainty principle for the Fourier transform ensures that, whenever the gene network
+of a trait is sufficiently concentrated, the effects in trait space are pervasive, so that a limited
+number of randomly chosen organisms will provide useful data. In effect, the “needles in the
+haystack” of the gene network cannot hide because they will poke all of the genomes. Much
+work still remains to test this theory empirically. This may involve recasting biological traits
+by a monotone transformation. But Poelwijk’s proteomics example [40] shows the viability of
+this approach. The time may be ripe for further application of this technique. For instance, various amino acid substitutions either in the SARS-CoV-2 spike protein or in the ACE2 receptor
+may affect their mutual binding strength [69–71] (taking binding strength as the relevant trait).
+Conveniently, the analysis need not be confined to just one protein: the amino acid substitutions can occur in both the spike protein and receptor. This application of Fourier techniques to
+proteomics might permit a rapid prediction of the features of a novel spike mutation spreading
+through genetically diverse populations.
