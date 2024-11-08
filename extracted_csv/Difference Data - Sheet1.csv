@@ -1,0 +1,159 @@
+Index,Name,First Document,Second Document,Difference
+1,HR1917_P1,"(b) Definitions.--In this section, the following definitions apply:
+            (1) Covered project.--The term ``covered project'' means--
+                    (A) an acquisition or relocation project for which 
+                an entity began implementation prior to grant award 
+                under a hazard mitigation assistance program; and
+                    (B) a project for which an entity initiated 
+                planning or construction before or after requesting 
+                assistance for the project under a hazard mitigation 
+                assistance program qualifying for a categorical 
+                exemption under the National Environmental Policy Act.","(a) Definitions.--In this section:
+            (1) Administrator.--The term ``Administrator'' means the 
+        Administrator of the Federal Emergency Management Agency.
+            (2) Covered project.--The term ``covered project'' means a 
+        project that--
+                    (A) is an acquisition and demolition project for 
+                which an entity began implementation, including planning 
+                or construction, before or after requesting assistance 
+                for the project under a hazard mitigation assistance 
+                program; and
+                    (B) qualifies for a categorical exclusion under the 
+                National Environmental Policy Act.","#### **2. Definitions Section:**
+- **First Document:** 
+  - **(a) Definitions** contains the definitions, including ""covered project"" and ""hazard mitigation assistance program.""
+- **Second Document:** 
+  - **(a) Definitions** includes the definition of ""Administrator"" (the Administrator of FEMA) and modifies the definition of ""covered project"" to focus on **acquisition and demolition projects**.
+
+#### **3. Covered Project Definition:**
+- **First Document:**
+  - ""Covered project"" refers to an **acquisition or relocation project** and specifies that it can be for which an entity began implementation prior to grant award.
+- **Second Document:**
+  - ""Covered project"" is defined as an **acquisition and demolition project** for which an entity began implementation, including planning or construction, before or after requesting assistance."
+2,HR1082_P1,"(3) Passenger.--The term ``passenger'' means an individual 
+        who is matched with a TNC driver by submitting to a 
+        transportation network company a trip request using a TNC 
+        platform.","(1) Passenger.--The term ``passenger'' means an individual 
+        who is matched with a TNC driver through a TNC platform.","1. **Passenger Definition:**
+   - **First Version:** ""who is matched with a TNC driver by submitting to a transportation network company a trip request using a TNC platform.""
+   - **Second Version:** ""who is matched with a TNC driver through a TNC platform.""
+   - **Difference:** The second version omits the phrase about submitting a trip request to a transportation network company."
+3,HR1082_P2,"(6) TNC driver.--The term ``TNC driver'' means an 
+        individual who contracts with a transportation network company 
+        to provide transportation services through a TNC platform in 
+        exchange for compensation or payment of a fee.
+(7) TNC platform.--The term ``TNC platform'' means an 
+        online-enabled application or digital network made available by 
+        a transportation network company to connect passengers to TNC 
+        drivers for the purpose of providing prearranged transportation 
+        services.","(2) Tnc driver.--The term ``TNC driver'' means an 
+        individual who contracts with a transportation network company 
+        and provides transportation services facilitated through a TNC 
+        platform in exchange for compensation or payment of a fee from 
+        a passenger.
+(3) Tnc platform.--The term ``TNC platform'' means an 
+        online-enabled application or digital network made available by 
+        a transportation network company to connect passengers to TNC 
+        drivers for the purpose of a TNC driver providing prearranged 
+        transportation services.","2. **TNC Driver Definition:**
+   - **First Version:** ""who contracts with a transportation network company to provide transportation services through a TNC platform in exchange for compensation or payment of a fee.""
+   - **Second Version:** ""who contracts with a transportation network company and provides transportation services facilitated through a TNC platform in exchange for compensation or payment of a fee from a passenger.""
+   - **Difference:** The second version explicitly states ""facilitated through a TNC platform"" and adds ""from a passenger"" at the end.
+
+3. **TNC Platform Definition:**
+   - **First Version:** ""to connect passengers to TNC drivers for the purpose of providing prearranged transportation services.""
+   - **Second Version:** ""for the purpose of a TNC driver providing prearranged transportation services.""
+   - **Difference:** The second version specifies ""a TNC driver providing"" instead of just ""providing."""
+4,HR1917_P2,"(a) Eligibility for Assistance for Initiated Projects.--
+            (1) In general.--Notwithstanding any other provision of 
+        law, an entity seeking assistance under a hazard mitigation 
+        assistance program shall be eligible to receive such assistance 
+        for a covered project if the entity--
+                    (A) complies with all other eligibility 
+                requirements of the hazard mitigation assistance 
+                program for acquisition or relocation projects, 
+                including extinguishing all incompatible encumbrances; 
+                and
+                    (B) complies with all Federal requirements for the 
+                project.
+            (2) Costs incurred.--An entity seeking assistance under a 
+        hazard mitigation assistance program shall be responsible for 
+        any project costs incurred by the entity for a covered project 
+        if the covered project is not awarded, or is determined to be 
+        ineligible for, assistance.","(b) Eligibility for Assistance for Covered Projects.--
+            (1) In general.--An entity seeking assistance under a hazard 
+        mitigation assistance program may be eligible to receive that 
+        assistance for a covered project if--
+                    (A) the entity--
+                          (i) complies with all other eligibility 
+                      requirements of the hazard mitigation assistance 
+                      program for acquisition or demolition projects, 
+                      including extinguishing all incompatible 
+                      encumbrances; and
+
+[[Page 136 STAT. 6120]]
+
+                          (ii) complies with all Federal requirements 
+                      for the covered project; and
+                    (B) <<NOTE: Determination.>>  the Administrator 
+                determines that the covered project--
+                          (i) qualifies for a categorical exclusion 
+                      under the National Environmental Policy Act of 
+                      1969 (42 U.S.C. 4321 et seq.);
+                          (ii) is compliant with applicable floodplain 
+                      management and protection of wetland regulations 
+                      and criteria; and
+                          (iii) does not require consultation under any 
+                      other environmental or historic preservation law 
+                      or regulation or involve any extraordinary 
+                      circumstances.
+            (2) Costs incurred.--An entity seeking assistance under a 
+        hazard mitigation assistance program shall be responsible for 
+        any project costs incurred by the entity for a covered project 
+        if the covered project is not awarded, or is determined to be 
+        ineligible for, assistance.","#### **4. Eligibility for Assistance:**
+- **First Document:**
+  - Eligibility is focused on compliance with the **hazard mitigation assistance program** requirements and federal requirements.
+- **Second Document:**
+  - More detailed eligibility criteria, including specific compliance with environmental regulations and floodplain management.
+  - Requires a **determination** from the **Administrator** regarding compliance and environmental factors."
+5,HR1917_P3," (c) Applicability.--This section shall apply to funds appropriated 
+on or after the date of enactment of this Act.","    (c) Applicability.--This Act shall apply to covered projects started 
+on or after the date of enactment of this Act.","#### **6. Applicability:**
+- **First Document:**
+  - States applicability to funds appropriated on or after the date of enactment.
+- **Second Document:**
+  - States applicability to covered projects started on or after the date of enactment."
+6,S3906_P1,"(c) Broadband and Emerging Information Technology Training.--The 
+broadband and emerging information technology coordinator shall provide 
+to employees of the Administration training that--
+            ``(1) familiarizes employees of the Administration with 
+        broadband and other emerging information technologies;
+            ``(2) includes--
+                    ``(A) instruction on counseling small business 
+                concerns regarding adopting, making innovations in, and 
+                using broadband and other emerging information 
+                technologies; and
+                    ``(B) information on programs of the Federal 
+                Government that provide assistance to small business 
+                concerns relating to broadband and emerging information 
+                technologies; ","(c) Broadband and Emerging Information Technology Training.--
+            ``(1) Training.--The Associate Administrator shall provide 
+        to employees of the Administration training that--
+                    ``(A) familiarizes employees of the Administration 
+                with broadband and other emerging information 
+                technologies;
+                    ``(B) includes--
+                            ``(i) instruction on counseling small 
+                        business concerns regarding adopting, making 
+                        innovations in, and using broadband and other 
+                        emerging information technologies; and
+                            ``(ii) information on programs of the 
+                        Federal Government that provide assistance to 
+                        small business concerns relating to broadband 
+                        and emerging information technologies; ","First version (Section c): The ""broadband and emerging information technology coordinator"" is responsible for training employees of the Administration.
+Second version (Section c): The ""Associate Administrator"" is explicitly tasked with providing training to the Administration employees, not the broadband coordinator. The language around the training responsibilities shifts from being the responsibility of the coordinator to the Associate Administrator."
+7,,,,
+8,,,,
+9,,,,
+10,,,,
