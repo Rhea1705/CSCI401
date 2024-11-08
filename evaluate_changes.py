@@ -52,7 +52,7 @@ def get_prompt(prompt_filepath, passage0, passage1):
 
     with_passages_str = ''.join(with_passages)
 
-    prompt[1] = with_passages_str
+    prompt[0] = with_passages_str
 
     return prompt
 
@@ -113,7 +113,7 @@ def parse_respose_output(output):
     return full_response_list
 
 
-input_text_name = "dcn"
+input_text_name = "adam"
 prompt_filepath = "prompt_ideation.txt"
 
 original_text, updated_text = get_input_text_data(input_text_name)
@@ -141,5 +141,8 @@ response = parse_respose_output(results)
 for output in response:
     print(output)
 
-
+with open("results.txt", "a") as file:
+    file.write(f"{input_text_name}:")
+    file.write(f"{output}\n")
+    file.write("==================\n")
 
