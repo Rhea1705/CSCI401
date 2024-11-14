@@ -113,7 +113,7 @@ def parse_respose_output(output):
     return full_response_list
 
 
-input_text_name = "adam"
+input_text_name = "ts_energy"
 prompt_filepath = "prompt_ideation.txt"
 
 original_text, updated_text = get_input_text_data(input_text_name)
@@ -129,6 +129,8 @@ input_text = "Hello!"
 
 for i, chain in enumerate(chain_links):
     results[i] = chain.invoke({"text": input_text})
+
+# json markdown? break down into different file --> specify output format
 
 print("----------------------------------")
 

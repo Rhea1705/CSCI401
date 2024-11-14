@@ -95,6 +95,26 @@ null: The texts are not comparable to determine if a new addition exists
 
 Your job is to give me six individual scores of changes based on each of the change types in json format as listed below. Please provide a single digit score for each along with a justification of why you chose that score, citing the change you found in the text.
 
+
+list changes 
+
+Change 1 {
+    Category: Claim,
+    Score: [score]
+    Justification: [justification]
+    Citation Passage 1: [Passage 1 citation]
+    Citation Passage 2: [Passage 2 citation]
+},
+
+Rec Action :
+ {  
+    score: [score]
+    justification: [justification]
+    list of changes: [],
+ }
+
+not all change types may be present
+
     Recommended_Action: 
         Score: [input score],
         Justification: [input justification],

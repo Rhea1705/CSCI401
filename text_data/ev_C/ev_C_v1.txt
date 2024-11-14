@@ -1,0 +1,1 @@
+Batteries with greater [[energy density]] such as metal-air fuel cells cannot always be recharged in a purely electric way, so some form of mechanical recharge may be used instead. A [[zinc–air battery]], technically a [[fuel cell]], is difficult to recharge electrically so may be "refueled" by periodically replacing the anode or electrolyte instead.

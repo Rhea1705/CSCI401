@@ -66,3 +66,6 @@ for data_point in data_points:
 
 for result in results:
     print(json.dumps(result, indent=2))  
+
+
+# justification of result
