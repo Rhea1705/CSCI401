@@ -83,3 +83,36 @@ Evaluation:
 Score: 3,
 Justification: In the first passage, the evaluation is that implementing reduced time-series as time-slices is not advised. In the second passage, the evaluation is that implementation of reduced time-series as grouped periods did not consistently achieve small shares of lost load. This
 ==================
+jupiter_A:
+
+Recommended_Action:
+Score: 1,
+Justification: The recommended action in passage 1 is to take the green supplement daily, while in passage 2 it is to take it occasionally. This is a minor difference in how to do the action, but not a change in the overall goal.
+Citation: Sample passage 1: For optimal results, you should take the green supplement daily to improve your health.
+Sample passage 2: It may be beneficial to take the green supplement occasionally, but it’s not essential for improving your health.
+
+Claim:
+Score: 4,
+Justification: In passage 1, the main point is that taking the green supplement daily will improve health, while in passage 2 it is not essential for improving health. This is a substantial change in the claim.
+Citation: Sample passage 1: For optimal results, you should take the green supplement daily to improve your health.
+Sample passage 2: It may be beneficial to take the green supplement occasionally, but it’s not essential for improving your health.
+
+Evaluation:
+Score: 4,
+Justification: In passage 1, the assessment is that taking the green supplement daily will result in optimal health, while in passage 2 it is only beneficial but not
+==================
+rl_reversion:
+{
+    "Recommended_Action": {
+        "Score": 4,
+        "Justification": "The recommended action is completely different in the two passages. In passage 1, it suggests using DRL for quantitative financial problems, while in passage 2, it recommends using DRL for financial problems using the latest technology developed by pioneers in the field.",
+        "Citation": "Sample passage 1: The main contribution of this paper is that we show how to apply DRL to quantitative financial problems and how to incorporate domain knowledge to assist the training for finding a better optimal."
+    },
+    "Claim": {
+        "Score": 4,
+        "Justification": "The main points made in the two passages are substantially different. In passage 1, it claims to provide proof of concept for an approximate arbitrage, while in passage 2, it claims to provide a proof of concept for an approximate arbitrage while producing Sharpe ratios that surpass prior state-of-the-arts.",
+        "Citation": "Passage 1: We provide a proof of concept in a controlled numerical simulation which permits an approximate arbitrage, and we verify that the DRL agent finds and exploits this arbitrage."
+    },
+    "Evaluation": {
+        "Score":
+==================

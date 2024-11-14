@@ -1,0 +1,32 @@
+{
+    "Recommended_Action": {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    },
+    "Claim":  {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    },
+    "Evaluation": {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    },
+    "Fact Changing": {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    },
+    "Phrasing": {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    },
+    "Addition": {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    }
+}

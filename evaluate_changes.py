@@ -9,14 +9,15 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain_openai import OpenAI
 
+load_dotenv()
+
+your_api_key = os.getenv('OPENAI_API_KEY')
+
+client = OpenAI(
+    api_key=your_api_key
+)
+
 def evaluate_changes(data_name):
-    load_dotenv()
-
-    your_api_key = os.getenv('OPENAI_API_KEY')
-
-    client = OpenAI(
-        api_key=your_api_key
-    )
 
     with open('change_types.json', 'r') as f:
         change_types = json.load(f)
@@ -148,3 +149,4 @@ def parse_respose_output(output):
 
     return full_response_list
 
+evaluate_changes("rl_reversion")
