@@ -9,19 +9,55 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain_openai import OpenAI
 
-load_dotenv()
+def evaluate_changes(data_name):
+    load_dotenv()
 
-your_api_key = os.getenv('OPENAI_API_KEY')
+    your_api_key = os.getenv('OPENAI_API_KEY')
 
-client = OpenAI(
-    api_key=your_api_key
-)
+    client = OpenAI(
+        api_key=your_api_key
+    )
 
-with open('change_types.json', 'r') as f:
-    change_types = json.load(f)
+    with open('change_types.json', 'r') as f:
+        change_types = json.load(f)
 
-with open('data_points.json', 'r') as f:
-    data_points = json.load(f)
+    with open('data_points.json', 'r') as f:
+        data_points = json.load(f)
+
+    input_text_name = data_name
+    prompt_filepath = "prompt_ideation.txt"
+
+    original_text, updated_text = get_input_text_data(input_text_name)
+
+    prompt = get_prompt(prompt_filepath, original_text, updated_text)
+
+    # print("prompt", prompt)
+
+    chain_links = create_chain(prompt)
+
+    results = {}
+    input_text = "Hello!" 
+
+    for i, chain in enumerate(chain_links):
+        results[i] = chain.invoke({"text": input_text})
+
+    # json markdown? break down into different file --> specify output format
+
+    print("----------------------------------")
+
+    print(results)
+
+    print("----------------------------------")
+
+    response = parse_respose_output(results)
+
+    for output in response:
+        print(output)
+
+    with open("results.txt", "a") as file:
+        file.write(f"{input_text_name}:")
+        file.write(f"{output}\n")
+        file.write("==================\n")
 
 def get_input_text_data(input_text_name):
     
@@ -111,40 +147,4 @@ def parse_respose_output(output):
     full_response_list = [entry['text'] for entry in output.values()]
 
     return full_response_list
-
-
-input_text_name = "ts_energy"
-prompt_filepath = "prompt_ideation.txt"
-
-original_text, updated_text = get_input_text_data(input_text_name)
-
-prompt = get_prompt(prompt_filepath, original_text, updated_text)
-
-# print("prompt", prompt)
-
-chain_links = create_chain(prompt)
-
-results = {}
-input_text = "Hello!" 
-
-for i, chain in enumerate(chain_links):
-    results[i] = chain.invoke({"text": input_text})
-
-# json markdown? break down into different file --> specify output format
-
-print("----------------------------------")
-
-print(results)
-
-print("----------------------------------")
-
-response = parse_respose_output(results)
-
-for output in response:
-    print(output)
-
-with open("results.txt", "a") as file:
-    file.write(f"{input_text_name}:")
-    file.write(f"{output}\n")
-    file.write("==================\n")
 

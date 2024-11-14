@@ -1,0 +1,10 @@
+The main contribution of this paper is that we show how to apply DRL
+to quantitative financial problems and how to incorporate domain knowledge to assist the
+training for finding a better optimal. We provide a proof of concept in a controlled numerical
+simulation which permits an approximate arbitrage, and we verify that the DRL agent finds
+and exploits this arbitrage.
+Again, note that although we only evaluated our results on two specific price processes
+and used a specific cost model, the DRL agent did not know that there was mean reversion
+in asset prices, nor did it know anything about the cost of trading. Therefore it could indeed
+learn other price and cost models with little extra tuning. You can find more code samples
+and other function properties being explored in the github repository.
