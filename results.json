@@ -1,0 +1,14 @@
+[
+  {
+    "Type_of_Change": "Claim",
+    "Original_Claim": "The term ``passenger'' means an individual who is matched with a TNC driver by submitting to a transportation network company a trip request using a TNC platform.",
+    "Updated_Claim": "The term ``passenger'' means an individual who is matched with a TNC driver through a TNC platform.",
+    "Change_Level": 1
+  },
+  {
+    "Type_of_Change": "Recommended_Action",
+    "Original_Action": "This section shall apply to funds appropriated on or after the date of enactment of this Act.",
+    "Updated_Action": "This Act shall apply to covered projects started on or after the date of enactment of this Act.",
+    "Change_Level": 4
+  }
+]
