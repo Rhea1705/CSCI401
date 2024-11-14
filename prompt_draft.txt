@@ -1,0 +1,38 @@
+We are providing a dataset containing samples along with the types of changes each data sample has been identified with. 
+Each change type is separated by a comma. Below is a list of possible changes along with their associated scores:
+
+Evaluations and Assessments: Score of 3
+Claims: Score of 3
+Recommended Actions and Prescriptions: Score of 2
+Fact Changing: Score of 2
+Adding Supporting Evidence / Examples: Score of 1
+Phrasing: Score of 1
+
+Factors to Consider:
+Size of Passage: If there is a substantial change in a large paragraph, it should be considered less impactful compared to a 
+small and substantial change in a smaller paragraph.
+Multiple Levels of Changes: If a paragraph contains multiple types of changes at different levels (e.g., two level 2 changes), 
+the overall change score should be higher (e.g., 3).
+Impact of Changes: When there are 1 and 2 level changes, consider how much the passage has actually changed in its meaning when 
+assigning a score. If the meaning or content has shifted significantly, the score should reflect that.
+
+Task:
+Calculate a final score for each data sample, which should range from 0 to 3.
+Consider the size of the passage and the level of changes when assigning the score.
+
+Data Sample:
+Sample 1:
+
+Passage 1:
+[passage]
+Passage 2:
+[passage]
+Types of Changes:
+[Change 1], [Change 2]
+
+Output:
+For each sample, return the total score in JSON format as follows:
+
+    "Sample 1 Total Score": [Total Score],
+    "Sample 2 Total Score": [Total Score],
+    "Sample 3 Total Score": [Total Score]
