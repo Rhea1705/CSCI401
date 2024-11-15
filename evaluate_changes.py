@@ -26,7 +26,7 @@ def evaluate_changes(data_name):
         data_points = json.load(f)
 
     input_text_name = data_name
-    prompt_filepath = "prompt_ideation.txt"
+    prompt_filepath = "list_of_changes_prompt.txt"
 
     original_text, updated_text = get_input_text_data(input_text_name)
 
@@ -149,4 +149,4 @@ def parse_respose_output(output):
 
     return full_response_list
 
-evaluate_changes("rl_reversion")
+evaluate_changes("forecasting")

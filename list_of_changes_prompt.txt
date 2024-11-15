@@ -100,32 +100,32 @@ not all change types may be present
     Recommended_Action: 
         Score: [input score],
         Justification: [input justification],
-        Citation: [cited sentence that was changed]
+        List of Changes: [list of changes found]
     ,
     Claim: 
         Score: [input score],
         Justification: [input justification],
-        Citation: [cited sentence that was changed]
+        List of Changes: [list of changes found]
     ,
     Evaluation: 
         Score: [input score],
         Justification: [input justification],
-        Citation: [cited sentence that was changed]
+        List of Changes: [list of changes found]
     ,
     Fact Changing: 
         Score: [input score],
         Justification: [input justification],
-        Citation: [cited sentence that was changed]
+        List of Changes: [list of changes found]
     ,
     Phrasing: 
         Score: [input score],
         Justification: [input justification],
-        Citation: [cited sentence that was changed]
+        List of Changes: [list of changes found]
     ,
     Addition: 
         Score: [input score],
         Justification: [input justification],
-        Citation: [cited sentence that was changed]
+        List of Changes: [list of changes found]
     
 
 

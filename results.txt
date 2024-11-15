@@ -116,3 +116,111 @@ rl_reversion:
     "Evaluation": {
         "Score":
 ==================
+rl_reversion:
+{
+    Recommended_Action: 
+        Score: 4,
+        Justification: The recommended action in passage 2 is substantially different from passage 1 as it suggests using new technology and incorporating domain knowledge, while the first passage does not mention this.
+        Citation: Sample passage 1: For optimal results, you should take the green supplement daily to improve your health.
+Sample passage 2: It may be beneficial to take the green supplement occasionally, but it’s not essential for improving your health.
+    ,
+    Claim: 
+        Score: 3,
+        Justification: The main claim in passage 2 is that the DRL agent is highly efficient and produces better results than prior state-of-the-arts, while passage 1 focuses on showing how DRL can be applied to financial problems and incorporates domain knowledge.
+        Citation: Passage 1: The main contribution of this paper is that we show how to apply DRL
+to quantitative financial problems and how to incorporate domain knowledge to assist the
+training for finding a better optimal.
+Passage 2: This article demonstrates how to apply DRL to quantitative nancial problems
+using the latest technology developed by the pioneers in the eld, and how to use domain knowledge
+to encourage
+==================
+savanna:
+{
+    Recommended_Action: 
+        Score: 3,
+        Justification: The second passage adds on a recommendation to reduce the impact of grazing animals, which was not present in the first passage. This creates a significant change in action steps.
+        Citation: "That being said, impact of grazing animals can be reduced."
+    ,
+    Claim: 
+        Score: 0,
+        Justification: The claim in both passages remains the same - that alteration in soil structure and nutrient levels affects plant species and woodland structure.
+        Citation: "Alteration in soil structure and nutrient levels affects the establishment, growth and survival of plant species and in turn can lead to a change in woodland structure and composition."
+    ,
+    Evaluation: 
+        Score: 0,
+        Justification: Both passages evaluate the same concept of how alteration in soil structure and nutrient levels affects plant species and woodland structure.
+        Citation: "Alteration in soil structure and nutrient levels affects the establishment, growth and survival of plant species and in turn can lead to a change in woodland structure and composition."
+    ,
+    Fact Changing: 
+        Score: 0,
+        Justification: Both passages present the same evidence and facts regarding the impact of alteration in soil structure and nutrient levels on plant species and
+==================
+forecasting:
+
+{
+    Recommended_Action: 
+        Score: 3,
+        Justification: The recommended action in the first passage is to further study the use of complex seasonal patterns for forecasting, while the second passage suggests exploring the use of non-adjacent sub-seasonal series. This is a significant change in how to approach forecasting.
+        Citation: "While for the time series that exhibit complex multiple seasonal patterns (e.g., multiple seasonal periods can be observed in the electric load data shown in Figure 8), how to effectively use such complex multiple sub-seasonal patterns to improve forecasting remains to be studied in the future (De Livera et al., 2011)." vs "An alternative would be to consider even more sub-seasonal series that are not necessarily limited to ones with adjacent periods, thus creating a larger pool of series and their accompanying forecasts."
+
+    Claim: 
+        Score: 4,
+        Justification: The main point in the first passage is that the current approach is limited and there is room for improvement in forecasting. The second passage suggests a different, potentially more effective approach. This is a substantially different or opposing claim.
+        Citation: "A limitation of our approach is that it is designed for accommodating only seasonal data. Moreover, our approach just focuses on
+==================
+urban_farming_A:
+Recommended_Action: 
+        Score: 4,
+        Justification: The recommended action in passage 1 is to set up a National Victory Garden Program, while in passage 2 it is to repurpose the gardens for economic development. This is a substantial change in the recommended action.
+        Citation: Passage 1: "The War/Food Administration set up a National Victory Garden Program that set out to systematically establish functioning agriculture within cities"
+        Passage 2: "most American sites becoming repurposed for various economic development initiatives"
+Claim: 
+        Score: 4,
+        Justification: The main point of passage 1 is the success of the Victory Garden Program during World War II, while passage 2 focuses on the decline of support for the gardens during the Interwar Period. These are substantially different claims.
+        Citation: Passage 1: "as many as 5.5 million Americans took part in the victory garden movement and over nine million pounds of fruit and vegetables were grown a year"
+        Passage 2: "Public and government support for Victory Gardens waned during the Interwar Period"
+Evaluation: 
+        Score: 3,
+        Justification: Passage 1 evaluates the Victory Garden Program as a success, while passage 2 evaluates it
+==================
+forecasting:
+
+Recommended_Action: 
+        Score: 3,
+        Justification: In the first passage, it is recommended that further research be done to improve forecasting. In the second passage, it is recommended to investigate the performance of optimal combination weights. These are both related to improving forecasting, but they are slightly different approaches.
+        List of Changes: The recommended action has shifted from "how to effectively use complex multiple sub-seasonal patterns" to "investigating the performance of optimal combination weights".
+    ,
+    Claim: 
+        Score: 3,
+        Justification: In the first passage, the main point is that the approach is designed for seasonal data and only focuses on simple seasonal patterns. In the second passage, the main point is that considering more sub-seasonal series could help reduce variance and improve forecasting. Both main points relate to the effectiveness of the approach, but they have different focuses.
+        List of Changes: The main points have shifted from the limitations of the approach to alternative ways to improve forecasting.
+    ,
+    Evaluation: 
+        Score: 2,
+        Justification: In the first passage, the approach is evaluated as having limitations and only focusing on simple seasonal patterns. In the second passage, it is evaluated as potentially having a positive effect on forecasting
+==================
+forecasting:
+{
+    "Recommended_Action": {
+        "Score": 4,
+        "Justification": "The recommended action in passage 2 is substantially different from the one in passage 1 as it suggests considering more sub-seasonal series and using optimal combination weights for improved forecasting.",
+        "List of Changes": [
+            "The recommended action in passage 2 suggests considering more sub-seasonal series",
+            "The recommended action in passage 2 suggests using optimal combination weights for improved forecasting"
+        ]
+    },
+    "Claim": {
+        "Score": 3,
+        "Justification": "There is a significant change in the claim between the two passages as passage 1 focuses on limitations while passage 2 suggests an alternative approach.",
+        "List of Changes": [
+            "Passage 1 focuses on limitations",
+            "Passage 2 suggests an alternative approach"
+        ]
+    },
+    "Evaluation": {
+        "Score": 2,
+        "Justification": "There are differences in the tone and intensity of the evaluation in the two passages as passage 1 states that further study is needed while passage 2 suggests potential avenues for future research.",
+        "List of Changes": [
+            "Passage 1 states further study is needed",
+            "Pass
+==================
