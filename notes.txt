@@ -1,0 +1,9 @@
+NOTES: list of changes first and then assign each change to a category
+
+** maybe give llm more freedom 
+** simpler changs 
+** definition of phrasing (synonyms)
+** paraphrasing .. trained to pick up paraphrases?
+** "train-test split" i.e. 40-10
+** policy docs
+** conclusions on academic papers 

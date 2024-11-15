@@ -126,7 +126,18 @@ not all change types may be present
         Score: [input score],
         Justification: [input justification],
         List of Changes: [list of changes found]
+
+
     
 
+NOTES: list of changes first and then assign each change to a category
+
+** maybe give llm more freedom 
+** simpler changs 
+** definition of phrasing (synonyms)
+** paraphrasing .. trained to pick up paraphrases?
+** "train-test split" i.e. 40-10
+** policy docs
+** conclusions on academic papers 
 
 [BREAK]
