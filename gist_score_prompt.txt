@@ -1,0 +1,33 @@
+We have given two versions of a passage and the list of changes that are present between the two versions
+
+When reviewing the change list, each change is given a "Type". Some change types tend to be more severe 
+than others:
+Highly Important: 
+Recommended Actions 
+Claims
+
+Moderately Important: 
+Evaluations 
+Fact Changing
+
+Minor: 
+Phrasing 
+Addition
+
+Consider these factors when scoring:
+Size of Passage: Big changes in long paragraphs are less impactful than similar changes in short paragraphs.
+Multiple Changes: If a passage has several minor changes vs a passage with two moderate changes, the one with multiple changes should be more impactful.
+Impact of Changes: Consider how much the changes affect the passage's meaning or content when scoring.
+
+Please score the overall level of the changes on this scale:
+3: There are multiple changes throughout the passage or if the major conclusion you get from the passage has shifted
+2: There are few impactful changes in the passage or the evidence used to make a point has changed
+1: The wording of the passage has changed but the meaning has not shifted significantly
+0: No changes at all, passages are the same
+
+Output Format: Please provide the score and justification in JSON format with the following fields:
+{
+    Score: int // Between 0 and 3
+    ,
+    Justification: str // Reasons for the score, in one or two sentences
+}
