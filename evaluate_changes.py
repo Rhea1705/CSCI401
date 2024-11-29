@@ -8,6 +8,11 @@ from langchain.prompts import PromptTemplate
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain_openai import OpenAI
+from langchain_core.prompts import (
+    ChatPromptTemplate,
+    HumanMessagePromptTemplate,
+    SystemMessagePromptTemplate,
+)
 
 load_dotenv()
 
@@ -62,7 +67,7 @@ def evaluate_changes(data_name):
 
 def get_input_text_data(input_text_name):
     
-    folder_path = "text_data\\" + input_text_name
+    folder_path = "text_data//" + input_text_name
     original_file = input_text_name + "_v0.txt"
     updated_file = input_text_name + "_v1.txt"
 
@@ -76,6 +81,19 @@ def get_input_text_data(input_text_name):
         updated_text = file1.read()
 
     return original_text, updated_text
+
+def get_chat_prompt_template(prompt_, passage1, passage2) -> ChatPromptTemplate:
+    user_prompt = prompt_.format(passage1=passage1, passage2=passage2)
+    system_prompt_template = SystemMessagePromptTemplate.from_template(
+        "{system_prompt_holder}"
+    )
+    # For security reasons langchain recs using f strings when input may be untrusted/not a string
+    user_prompt_template = HumanMessagePromptTemplate.from_template(user_prompt)
+    prompt = ChatPromptTemplate.from_messages(
+        [system_prompt_template, user_prompt_template]
+    )
+    return prompt
+
 
 def get_prompt(prompt_filepath, passage0, passage1):
     with open(prompt_filepath, 'r') as file:
@@ -148,5 +166,3 @@ def parse_respose_output(output):
     full_response_list = [entry['text'] for entry in output.values()]
 
     return full_response_list
-
-evaluate_changes("forecasting")

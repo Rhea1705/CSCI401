@@ -1,0 +1,135 @@
+Hello! I will be giving you two different passages. 
+Your objective is to list the changes between the two passages along with the level (or severity) of the change. 
+I will give you a description of each type of change as well as examples of what the change looks like.
+Then, I will ask you to give a rating of the change on a scale from 1-5 that I will provide.
+
+The first change type is "Recommended Action"
+A description of this change would be: The change between two paragraphs represents a modification in the recommended action or prescribed course of action.
+Here are some examples:
+Sample passage 1: For optimal results, you should take the green supplement daily to improve your health.
+Sample passage 2: It may be beneficial to take the green supplement occasionally, but it’s not essential for improving your health.
+Differences: The sample passage two recommends taking the supplement occassionally, but the first passage recommends taking it daily.
+
+Please provide a single digit answer from 1-5 based on the scale below that corresponds to the level of change between the inital two passages along with a reasoning of why you selected this number.
+Scale:
+0: Exactly the same
+1: Minor differences, phrasing
+2: Differences in how to do it, but not action goal
+3: Major how
+4: Substantially different action steps
+5: Completely opposite guidance
+null: No comparable actions of this type in the new paragraph
+
+The second change type is "Claim"
+A description of this change type would be: A difference in claims between two texts appears as different main points being made. It could take the form of thesis statements, topic sentences, or conclusions.
+
+Please provide a single digit answer from 1-5 based on the scale below that corresponds to the level of change between the inital two passages along with a reasoning of why you selected this number.
+Scale:
+0: Exactly the same claim
+1: Minor differences in wording or phrasing
+2: Differences in tone or intensity of the claim
+3: Significant change in the claim or evidence
+4: Substantially different or opposing claim
+5: Completely opposite claim
+null: No comparable claims found
+
+The third change type is "Evaluation"
+A description of this change type would be: The change reflects a modification in the evaluation or assessment of a situation, concept, or outcome.
+
+Please provide a single digit answer from 1-5 based on the scale below that corresponds to the level of change between the inital two passages along with a reasoning of why you selected this number.
+Scale:
+0: Exactly the same evaluation
+1: Minor differences in phrasing
+2: Differences in tone or degree of evaluation
+3: Significant change in assessment criteria
+4: Substantial change in evaluation or judgment
+5: Completely opposite evaluation
+null: No comparable evaluation found
+
+The fourth change type is "Fact Changing"
+A description of this change type would be: The change shows a difference in originally presented evidence or facts. This is usually a change from another source author or new evidence was found.
+
+Please provide a single digit answer from 1-5 based on the scale below that corresponds to the level of change between the inital two passages along with a reasoning of why you selected this number.
+Scale:
+0: Exactly the same fact
+1: Minor differences in fact
+2: Reference material for the fact is different, but the fact remains essentially the same
+3: Reference material for the fact is different, and there is a minor difference
+4: Substantial change in fact
+5: Completely opposite fact
+null: No comparable fact found
+
+The fifth change type is "Phrasing"
+A description of this change type would be: The change reflects a difference in word choice or sentence structure.
+
+Please provide a single digit answer from 1-5 based on the scale below that corresponds to the level of change between the inital two passages along with a reasoning of why you selected this number.
+Scale:
+0: Exactly the same phrasing
+1: Minor differences in phrasing
+2: Differences in sentence structure
+3: Differences in word choice
+4: Differences in word choice and sentence structure
+5: Completely opposite phrasing
+null: No comparable phrasing found
+
+The sixth change type is "Addition"
+A description of this change type would be: The change reflects that something new was added to the original text.
+
+Please provide a single digit answer from 1-5 based on the scale below that corresponds to the level of change between the inital two passages along with a reasoning of why you selected this number.
+Scale:
+0: Nothing new was added
+1: A word was added but it does not change the meaning of the sentence
+2: A sentence was added but it does not change the meaning of the text
+3: The addition creates another change in either phrasing or evidence
+4: The addition creates another change in evaluation
+5: The addition creates another change in either claim or recommended actions
+null: The texts are not comparable to determine if a new addition exists
+
+Your job is to give me six individual scores of changes based on each of the change types in json format as listed below. Please provide a single digit score for each along with a justification of why you chose that score, citing the change you found in the text.
+
+not all change types may be present
+
+Follow this JSON output structure
+{
+    "Recommended_Action": {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    },
+    "Claim":  {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    },
+    "Evaluation": {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    },
+    "Fact Changing": {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    },
+    "Phrasing": {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    },
+    "Addition": {
+        "Score": "[input score]",
+        "Justification": "[input justification]",
+        "List of changes": []
+    }
+}
+    
+
+NOTES: list of changes first and then assign each change to a category
+
+** maybe give llm more freedom 
+** simpler changs 
+** definition of phrasing (synonyms)
+** paraphrasing .. trained to pick up paraphrases?
+** "train-test split" i.e. 40-10
+** policy docs
+** conclusions on academic papers 
