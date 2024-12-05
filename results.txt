@@ -224,3 +224,161 @@ forecasting:
             "Passage 1 states further study is needed",
             "Pass
 ==================
+adam:
+[
+    {
+        "Type of Change": "Recommended Action",
+        "Score": 4,
+        "Justification": "The recommended action changes from taking the green supplement daily to taking it occasionally. This is a substantial change in the action steps, as it goes from a daily routine to an occasional one."
+    },
+    {
+        "Type of Change": "Claim",
+        "Score": 3,
+        "Justification": "The main point of the initial passage is that Adam is an efficient stochastic optimization method. In the second passage, the main point is the same, but it is presented as part of a comparison with a variant called AdaMax. The claim is the same, but the evidence and focus have changed slightly, resulting in a significant change in the claim."
+    },
+    {
+        "Type of Change": "Evaluation",
+        "Score": 2,
+        "Justification": "In the first passage, the method is described as 'well suited' for certain problems, while in the second passage it is described as 'efficient' for those same problems. This is a minor difference in the tone or degree of evaluation."
+    },
+    {
+        "Type of Change": "Fact Changing",
+        "Score": 4,
+        "
+==================
+adam: 
+
+[
+  {
+    "Type of Change": "Recommended Action",
+    "Score": 3,
+    "Justification": "The first passage recommends taking the green supplement daily while the second passage suggests only taking it occasionally, indicating a significant change in the recommended action."
+  },
+  {
+    "Type of Change": "Claim",
+    "Score": 2,
+    "Justification": "The first passage claims that AdaGrad and RMSProp are important connections to Adam, while the second passage claims that they are important connections to other stochastic optimization methods. This change in tone and intensity of the claim warrants a score of 2."
+  },
+  {
+    "Type of Change": "Evaluation",
+    "Score": 2,
+    "Justification": "The first passage evaluates Adam as having many advantages, while the second passage evaluates it as having some advantages. This difference in degree of evaluation warrants a score of 2."
+  },
+  {
+    "Type of Change": "Fact Changing",
+    "Score": 2,
+    "Justification": "The first passage states that Adam is based on adaptive estimates of lower-order moments of the gradients, while the second passage adds that it is based on adaptive estimates of first and second moments of the gradients.
+==================
+adam:
+
+Change 1:
+    Passage 1: "The method is computationally efficient",
+    Passage 2: "The method is computationally efficient, has little memory requirements",
+    Type of Change: "Addition",
+    Score: 2,
+    Justification: "An additional detail was added about the method's memory requirements, which slightly changes the information being conveyed."
+
+Change 2:
+    Passage 1: "the method is computationally efficient, has little memory requirements",
+    Passage 2: "The method is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients",
+    Type of Change: "Addition",
+    Score: 2,
+    Justification: "Another detail was added about the method's invariance to diagonal rescaling of the gradients, which slightly changes the information being conveyed."
+    
+Change 3:
+    Passage 1: "The method is computationally efficient",
+    Passage 2: "The method is computationally efficient, is computationally efficient, has little memory requirements",
+    Type of Change: "Phrasing",
+    Score: 2,
+    Justification: "The phrase 'is computationally efficient' was repeated in the second passage, which slightly changes the phrasing."
+
+
+==================
+adam:
+
+{
+"Change 1": {
+"Passage 1": "ABSTRACT",
+"Passage 2": "ABSTRACT",
+"Type of Change": "Phrasing",
+"Score": 0,
+"Justification": "The abstracts are exactly the same."
+},
+"Change 2": {
+"Passage 1": "We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions.",
+"Passage 2": "We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments.",
+"Type of Change": "Addition",
+"Score": 3,
+"Justification": "A new phrase 'based on adaptive estimates of lower-order moments' was added, which changes the evidence for the algorithm's design."
+},
+"Change 3": {
+"Passage 1": "The method is computationally efficient, has little memory requirements and is well suited for problems that are large in terms of data and/or parameters.",
+"Passage 2": "The method is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters.",
+"Type of Change
+==================
+adam:
+
+{
+    "Change 1": {
+        "Passage 1": "ABSTRACT",
+        "Passage 2": "ABSTRACT",
+        "Type of Change": "Phrasing",
+        "Score": "1",
+        "Justification": "The word 'Adam' was added in the second passage in the first sentence, but it does not significantly change the meaning or tone of the abstract."
+    },
+    "Change 2": {
+        "Passage 1": "ABSTRACT",
+        "Passage 2": "ABSTRACT",
+        "Type of Change": "Recommended Action",
+        "Score": "1",
+        "Justification": "In the first passage, it mentions that 'the method is based on adaptive estimates' while in the second passage it specifies that it is based on 'adaptive estimates of lower-order moments'. This is a minor difference in how to implement the method, but does not change the overall recommended action."
+    },
+    "Change 3": {
+        "Passage 1": "ABSTRACT",
+        "Passage 2": "ABSTRACT",
+        "Type of Change": "Evaluation",
+        "Score": "2",
+        "Justification": "In the first passage, it states
+==================
+adam:
+
+[
+    {
+        "Description": "The method is based on adaptive estimates of lower-order moments of the gradients.",
+        "Type of Change": "Recommended Action",
+        "Score": 2,
+        "Justification": "The change in the method from being based on adaptive estimates of lower-order moments of the gradients to using adaptive estimates of lower-order moments shows a difference in how to do the recommended action."
+    },
+    {
+        "Description": "The method is computationally efficient and has little memory requirements.",
+        "Type of Change": "Recommended Action",
+        "Score": 2,
+        "Justification": "The addition of the description of the method being computationally efficient and having little memory requirements shows a change in the recommended action from the previous passage."
+    },
+    {
+        "Description": "The method is well suited for problems that are large in terms of data and/or parameters.",
+        "Type of Change": "Recommended Action",
+        "Score": 2,
+        "Justification": "The addition of the description of the method being well suited for large problems shows a change in the recommended action from the previous passage."
+    },
+    {
+        "Description": "The method is also appropriate for non-stationary objectives and problems with
+==================
+adam:
+
+[
+  {
+    "Description": "The first passage introduces an algorithm called Adam for gradient-based optimization of stochastic objective functions, while the second passage also mentions a variant of Adam called AdaMax.",
+    "Type of Change": "Addition",
+    "Score": 3,
+    "Justification": "The addition of a new variant of the algorithm changes the recommended actions and evaluation of the original algorithm. This is a significant change as it introduces new concepts and potential modifications to the original algorithm."
+  },
+  {
+    "Description": "The first passage mentions that the method is also appropriate for non-stationary objectives and problems with noisy and/or sparse gradients, while the second passage adds that it also works well in practice and compares favorably to other stochastic optimization methods.",
+    "Type of Change": "Recommended Action",
+    "Score": 3,
+    "Justification": "The addition of information about the practical performance of the algorithm changes the recommended actions and evaluation of the method. This is a significant change as it affects the overall understanding and potential use of the algorithm."
+  },
+  {
+    "Description": "The first passage states that the method is computationally efficient, has little memory requirements and is well suited for large problems, while the second passage
+==================

@@ -45,124 +45,32 @@ class ScoringOutputParser:
 class EvaluateChangesOutputParser(BooleanOutputParser):
 
     schema: ClassVar[dict] = {
-        "type": "object",
-        "properties": {
-            "Recommended_Action": {
-                "type": "object",
-                "properties": {
-                    "Score": {
-                        "type": "string",
-                        "pattern": "^[0-5]|null$"
-                    },
-                    "Justification": {
-                        "type": "string"
-                    },
-                    "List of changes": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "Description": {
+                    "type": "string"
                 },
-                "required": ["Score", "Justification", "List of changes"]
+                "Passage_2": {
+                    "type": "string"
+                },
+                "Type_of_Change": {
+                    "type": "string",
+                    "enum": ["Recommended Action", "Claim", "Evaluation", "Fact Changing", "Phrasing", "Addition"]
+                },
+                "Score": {
+                    "type": "string",
+                    "pattern": "^[0-5]|null$"
+                },
+                "Justification": {
+                    "type": "string"
+                }
             },
-            "Claim": {
-                "type": "object",
-                "properties": {
-                    "Score": {
-                        "type": "string",
-                        "pattern": "^[0-5]|null$"
-                    },
-                    "Justification": {
-                        "type": "string"
-                    },
-                    "List of changes": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "required": ["Score", "Justification", "List of changes"]
-            },
-            "Evaluation": {
-                "type": "object",
-                "properties": {
-                    "Score": {
-                        "type": "string",
-                        "pattern": "^[0-5]|null$"
-                    },
-                    "Justification": {
-                        "type": "string"
-                    },
-                    "List of changes": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "required": ["Score", "Justification", "List of changes"]
-            },
-            "Fact Changing": {
-                "type": "object",
-                "properties": {
-                    "Score": {
-                        "type": "string",
-                        "pattern": "^[0-5]|null$"
-                    },
-                    "Justification": {
-                        "type": "string"
-                    },
-                    "List of changes": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "required": ["Score", "Justification", "List of changes"]
-            },
-            "Phrasing": {
-                "type": "object",
-                "properties": {
-                    "Score": {
-                        "type": "string",
-                        "pattern": "^[0-5]|null$"
-                    },
-                    "Justification": {
-                        "type": "string"
-                    },
-                    "List of changes": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "required": ["Score", "Justification", "List of changes"]
-            },
-            "Addition": {
-                "type": "object",
-                "properties": {
-                    "Score": {
-                        "type": "string",
-                        "pattern": "^[0-5]|null$"
-                    },
-                    "Justification": {
-                        "type": "string"
-                    },
-                    "List of changes": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "required": ["Score", "Justification", "List of changes"]
-            }
-        },
+            "required": ["Type_of_Change", "Score", "Justification"]
+        }
     }
+
     
     def parse(self, text: str) -> bool:
         try:

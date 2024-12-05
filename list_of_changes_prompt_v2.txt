@@ -5,11 +5,6 @@ Then, I will ask you to give a rating of the change on a scale from 1-5 that I w
 
 The first change type is "Recommended Action"
 A description of this change would be: The change between two paragraphs represents a modification in the recommended action or prescribed course of action.
-Here are some examples:
-Sample passage 1: For optimal results, you should take the green supplement daily to improve your health.
-Sample passage 2: It may be beneficial to take the green supplement occasionally, but it’s not essential for improving your health.
-Differences: The sample passage two recommends taking the supplement occassionally, but the first passage recommends taking it daily.
-
 Please provide a single digit answer from 1-5 based on the scale below that corresponds to the level of change between the inital two passages along with a reasoning of why you selected this number.
 Scale:
 0: Exactly the same
@@ -122,14 +117,3 @@ Follow this JSON output structure
         "List of changes": []
     }
 }
-    
-
-NOTES: list of changes first and then assign each change to a category
-
-** maybe give llm more freedom 
-** simpler changs 
-** definition of phrasing (synonyms)
-** paraphrasing .. trained to pick up paraphrases?
-** "train-test split" i.e. 40-10
-** policy docs
-** conclusions on academic papers 

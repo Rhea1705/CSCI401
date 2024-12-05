@@ -166,3 +166,6 @@ def parse_respose_output(output):
     full_response_list = [entry['text'] for entry in output.values()]
 
     return full_response_list
+
+
+evaluate_changes("adam")

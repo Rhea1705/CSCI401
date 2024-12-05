@@ -13,11 +13,6 @@ Passage 2:
 
 The first change type is "Recommended Action"
 A description of this change would be: The change between two paragraphs represents a modification in the recommended action or prescribed course of action.
-Here are some examples:
-Sample passage 1: For optimal results, you should take the green supplement daily to improve your health.
-Sample passage 2: It may be beneficial to take the green supplement occasionally, but it’s not essential for improving your health.
-Differences: The sample passage two recommends taking the supplement occassionally, but the first passage recommends taking it daily.
-
 Please provide a single digit answer from 1-5 based on the scale below that corresponds to the level of change between the inital two passages along with a reasoning of why you selected this number.
 Scale:
 0: Exactly the same
@@ -93,51 +88,19 @@ Scale:
 5: The addition creates another change in either claim or recommended actions
 null: The texts are not comparable to determine if a new addition exists
 
-Your job is to give me six individual scores of changes based on each of the change types in json format as listed below. Please provide a single digit score for each along with a justification of why you chose that score, citing the change you found in the text.
+Your job is to give me a list of changes with the following properties and labels in json format as listed below. It must be in JSON format. Please provide a label for the type of change, a single digit score for each along with a justification of why you chose that score, citing the change you found in the text. Not all change types may be present.
 
-not all change types may be present
+Change 1:
+    Description: [describe the difference between the two passages],
+    Type of Change: [select the best fitting label of one of the following: recommended action, claim, evaluation, fact changing, phrasing, or addition],
+    Score: [give the severity of the change on a scale from 0 to 5 based on each of the scales listed above],
+    Justification: [provide a justification of why this change type was selected and why the score was given]
+Change 2:
+    Description: [describe the difference between the two passages],
+    Type of Change: [select the best fitting label of recommended action, claim, evaluation, fact changing, phrasing, or addition],
+    Score: [give the severity of the change on a scale from 0 to 5 based on each of the scales listed above],
+    Justification: [provide a justification of why this change type was selected and why the score was given]
 
-    Recommended_Action: 
-        Score: [input score],
-        Justification: [input justification],
-        List of Changes: [list of changes found]
-    ,
-    Claim: 
-        Score: [input score],
-        Justification: [input justification],
-        List of Changes: [list of changes found]
-    ,
-    Evaluation: 
-        Score: [input score],
-        Justification: [input justification],
-        List of Changes: [list of changes found]
-    ,
-    Fact Changing: 
-        Score: [input score],
-        Justification: [input justification],
-        List of Changes: [list of changes found]
-    ,
-    Phrasing: 
-        Score: [input score],
-        Justification: [input justification],
-        List of Changes: [list of changes found]
-    ,
-    Addition: 
-        Score: [input score],
-        Justification: [input justification],
-        List of Changes: [list of changes found]
-
-
-    
-
-NOTES: list of changes first and then assign each change to a category
-
-** maybe give llm more freedom 
-** simpler changs 
-** definition of phrasing (synonyms)
-** paraphrasing .. trained to pick up paraphrases?
-** "train-test split" i.e. 40-10
-** policy docs
-** conclusions on academic papers 
+... continue for all changes found in the passage.
 
 [BREAK]
